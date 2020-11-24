@@ -30,8 +30,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/product/lib64/com.quicinc.cne.api@1.0.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	product_specific: true,
 }
@@ -47,8 +47,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/product/lib64/com.quicinc.cne.api@1.1.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	product_specific: true,
 }
@@ -64,8 +64,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@1.0.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	product_specific: true,
 }
@@ -81,8 +81,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@2.0.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	product_specific: true,
 }
@@ -98,8 +98,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/product/lib64/com.quicinc.cne.constants@2.1.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	product_specific: true,
 }
@@ -115,8 +115,8 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/product/lib64/vendor.qti.hardware.fm@1.0.so"],
 		},
 	},
-	check_elf_files: false,
 	compile_multilib: "64",
+	check_elf_files: false,
 	prefer: true,
 	product_specific: true,
 }
@@ -166,18 +166,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CarrierSettings",
-	owner: "realme",
-	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
 	name: "QAS_DVC_MSP",
 	owner: "realme",
 	apk: "proprietary/product/priv-app/QAS_DVC_MSP/QAS_DVC_MSP.apk",
@@ -223,18 +211,6 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
-}
-
-dex_import {
-	name: "QPerformance",
-	owner: "realme",
-	jars: ["proprietary/framework/QPerformance.jar"],
-}
-
-dex_import {
-	name: "UxPerformance",
-	owner: "realme",
-	jars: ["proprietary/framework/UxPerformance.jar"],
 }
 
 dex_import {
